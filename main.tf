@@ -53,7 +53,7 @@ resource "aws_iam_role" "spacelift_role" {
   },
   "Effect": "Allow",
   "Principal": {
-    "AWS": "324880187172"
+    "AWS": ${var.aws_account_id}
   }
 }
     ]
